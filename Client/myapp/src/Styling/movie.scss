@@ -1,0 +1,93 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 425px;
+  margin: 3px;
+  padding: 0 0 15px 0;
+  background-color: #242027;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  .container {
+    width: 100%;
+    height: 410px;
+    img {
+      width: 150px;
+      height: 225px;
+    }
+    .inner-wrapper {
+      text-align: start;
+      margin: 0 1.5rem;
+
+      .starts {
+        display: flex;
+        margin: 1rem 0;
+        svg {
+          height: 12px;
+          fill: gold;
+        }
+      }
+      .title-wrapper {
+        height: 30px;
+        .title {
+          font-weight: bold;
+        }
+        .premierd {
+          font-size: 10px;
+          margin-left: 0.5rem;
+          font-weight: lighter;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      .genres-wrapper {
+        margin-top: 0.5rem;
+        height: 30px;
+
+        span {
+          color: rgba(255, 255, 255, 0.5);
+          margin: 0.1rem;
+        }
+      }
+    }
+  }
+  .sub-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    .primary-button {
+      padding: 7px 10px;
+    }
+  }
+
+  .subscription-details {
+    margin-top: 2rem;
+    .buttons-wrapper {
+      justify-content: center;
+    }
+
+    .inner {
+      margin-bottom: 1rem;
+      ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2px;
+        }
+        .name {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.custom-tooltip {
+  font-size: 10px;
+  padding: 2px !important;
+}

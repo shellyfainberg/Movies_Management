@@ -1,0 +1,100 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.darken-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.background-container {
+  position: fixed;
+  background-image: url("../assets/movies.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 20%;
+  min-width: 350px;
+  min-height: 320px;
+  padding: 3rem 0;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  h1 {
+    margin: 1rem 0;
+  }
+
+  input {
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    outline: 0;
+    margin-bottom: 10px;
+    background-color: #f3f3f3;
+  }
+  form{
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  a {
+    cursor: pointer;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  .login-button {
+    background-color: #ef32ad;
+    border: unset;
+    border-radius: 18px;
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 190px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .rememberMe-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      padding: 0 0.3rem;
+
+      input {
+        margin: 0 0.2rem;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

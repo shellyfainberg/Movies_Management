@@ -1,0 +1,65 @@
+.edit-wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 2rem;
+
+  .container {
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #242027;
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 120px;
+      }
+      .avater-img {
+        border-radius: 50%;
+        margin: 1rem;
+      }
+    }
+    form {
+      .form-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-bottom: 0.5rem;
+
+        input {
+          height: 20px;
+          border-radius: 20px;
+          border: none;
+          outline: 0;
+          background-color: #f3f3f3;
+        }
+
+        .select-geners {
+          width: 100%;
+          border-radius: 8px;
+        }
+
+        .select-country {
+          height: 20px;
+          border-radius: 20px;
+        }
+        input,
+        .select-geners,
+        .select-country {
+          width: 100%;
+          max-width: 175px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  .buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
